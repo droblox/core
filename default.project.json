@@ -1,0 +1,34 @@
+{
+  "name": "Droblox Core",
+  "globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+  "tree": {
+    "$className": "DataModel",
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "DrobloxCore": {
+        "$path": "out/server"
+      }
+    },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "TypeScript": {
+        "$path": "include",
+        "node_modules": {
+          "$path": "../../node_modules/@rbxts"
+        }
+      },
+      "DrobloxCore": {
+        "$path": "out/shared"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "DrobloxCore": {
+          "$path": "out/client"
+        }
+      }
+    }
+  }
+}
