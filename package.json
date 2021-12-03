@@ -21,6 +21,7 @@
   ],
   "description": "Droblox core library",
   "dependencies": {
+    "@rbxts/partcache": "^1.1.1",
     "@rbxts/object-utils": "^1.0.4",
     "@rbxts/roact": "^1.4.0-ts.2",
     "@rbxts/services": "^1.2.0",
