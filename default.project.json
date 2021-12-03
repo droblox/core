@@ -12,7 +12,7 @@
         }
       },
       "DrobloxCore": {
-        "$path": "out"
+        "$path": "dist"
       }
     }
   }

@@ -1,6 +1,7 @@
 {
   "name": "@rbxts/droblox-core",
   "version": "0.1.0",
+  "private": true,
   "author": "Komerdoor",
   "keywords": [
     "droblox",
@@ -8,21 +9,18 @@
     "utilities",
     "services"
   ],
-  "scripts": {
-    "build": "rbxtsc",
-    "prepare": "rbxtsc",
-    "watch": "rbxtsc -w"
-  },
-  "license": "MIT",
-  "main": "out/init.lua",
-  "types": "out/index.d.ts",
   "files": [
-    "out"
+    "**/*.lua",
+    "**/*.d.ts"
   ],
+  "type": "module",
+  "main": "init.lua",
+  "types": "index.d.ts",
+  "license": "MIT",
   "description": "Droblox core library",
   "dependencies": {
-    "@rbxts/partcache": "^1.1.1",
     "@rbxts/object-utils": "^1.0.4",
+    "@rbxts/partcache": "^1.1.1",
     "@rbxts/roact": "^1.4.0-ts.2",
     "@rbxts/services": "^1.2.0",
     "@rbxts/t": "^2.2.1",
@@ -44,8 +42,14 @@
     "prettier": "^2.4.1",
     "typescript": "~4.5.x"
   },
-  "homepage": "https://github.com/droblox/core",
   "repository": {
     "url": "https://github.com/droblox/core"
+  },
+  "homepage": "https://github.com/droblox/core",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "pack": "npm run build && node prepare.js && npm pack ./dist",
+    "publish": "npm run build && node prepare.js && npm publish ./dist"
   }
 }

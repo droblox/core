@@ -15,7 +15,7 @@
     "typeRoots": ["./node_modules/@rbxts"],
 
     // configurable
-    "outDir": "./out",
+    "outDir": "./dist",
     "baseUrl": "./src",
     "declaration": true,
 
