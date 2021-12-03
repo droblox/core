@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/droblox-core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "author": "Komerdoor",
   "keywords": [
@@ -49,7 +49,7 @@
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
-    "pack": "npm run build && node prepare.js && npm pack ./dist",
-    "publish": "npm run build && node prepare.js && npm publish ./dist"
+    "droblox-pack": "npm run build && node prepare.js && npm pack ./dist",
+    "droblox-publish": "npm run build && node prepare.js && npm publish ./dist"
   }
 }
