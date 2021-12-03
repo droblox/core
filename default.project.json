@@ -2,9 +2,18 @@
   "name": "Droblox Core",
   "globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
   "tree": {
-    "$className": "Folder",
-    "out": {
-      "$path": "out"
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "TypeScript": {
+        "$path": "include",
+        "node_modules": {
+          "$path": "../../node_modules/@rbxts"
+        }
+      },
+      "DrobloxCore": {
+        "$path": "out"
+      }
     }
   }
 }
