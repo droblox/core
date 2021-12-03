@@ -15,13 +15,13 @@
     "typeRoots": ["./node_modules/@rbxts"],
 
     // configurable
-    "outDir": "./dist",
+    "outDir": "./out",
     "baseUrl": "./src",
-    "incremental": true,
+    "declaration": true,
+    "incremental": false,
     "tsBuildInfoFile": "./out/tsconfig.tsbuildinfo",
 
     // monorepo
     "rootDirs": ["./src"]
-  },
-  "include": ["src/**/*"]
+  }
 }
